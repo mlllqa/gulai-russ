@@ -1,0 +1,39 @@
+# === Общие ===
+*.log
+*.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
+*.sqlite
+*.bak
+*.tmp
+node_modules/
+vendor/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Laravel (gulai-russ-back) ===
+gulai-russ-back/vendor/
+gulai-russ-back/storage/
+gulai-russ-back/bootstrap/cache/
+gulai-russ-back/.phpunit.result.cache
+gulai-russ-back/.env
+gulai-russ-back/public/storage
+
+# === React (gulai-russ) ===
+gulai-russ/node_modules/
+gulai-russ/dist/
+gulai-russ/.next/
+gulai-russ/.cache/
+gulai-russ/build/
+
+# === Docker, временные образы, сокеты ===
+*.pid
+*.sock
+*.tar
+*.img
+
+# === Logs ===
+logs/

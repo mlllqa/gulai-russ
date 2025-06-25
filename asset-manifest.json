@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/gulai-russ/static/css/main.f44d25da.css",
+    "main.js": "/gulai-russ/static/js/main.b1bcafa3.js",
+    "static/media/moodboard.svg": "/gulai-russ/static/media/moodboard.0c5e9854068b61172c06f515ff063513.svg",
+    "static/media/contacts__title.svg": "/gulai-russ/static/media/contacts__title.17a65c4c647c05a064d7fcf64896219f.svg",
+    "static/media/logo3.svg": "/gulai-russ/static/media/logo3.d57e273b6ac2bbfdc8f0eb7286b402af.svg",
+    "static/media/logo1.svg": "/gulai-russ/static/media/logo1.4b604474dfe17dc89a6cb452dac5bebf.svg",
+    "static/media/logo2.svg": "/gulai-russ/static/media/logo2.18382d57efe52ec01de77b9d4ce2d779.svg",
+    "static/media/map.svg": "/gulai-russ/static/media/map.19d03e4d6081294285b414fc0208419c.svg",
+    "static/media/EuclidCircularAMediumItalic.ttf": "/gulai-russ/static/media/EuclidCircularAMediumItalic.9f44747c04c2f9e18476.ttf",
+    "static/media/EuclidCircularRegular.ttf": "/gulai-russ/static/media/EuclidCircularRegular.d54600880dc63db716f2.ttf",
+    "static/media/Lavka2021.otf": "/gulai-russ/static/media/Lavka2021.84ae42c13b90b67970fb.otf",
+    "static/media/personal_account.svg": "/gulai-russ/static/media/personal_account.cb179282359cffbc16641fadd050e78b.svg",
+    "static/media/snowflakes.svg": "/gulai-russ/static/media/snowflakes.10a2c42f39e1644b5d986659805854f8.svg",
+    "static/media/button-register.svg": "/gulai-russ/static/media/button-register.d1197d2f88be11f3119732a390d943f6.svg",
+    "static/media/popup_btn.svg": "/gulai-russ/static/media/popup_btn.82e113e822cf14fec7e08e0251c03cf9.svg",
+    "static/media/button-frame.svg": "/gulai-russ/static/media/button-frame.05e9ff4456d54acd25c8024f16fde33b.svg",
+    "static/media/button-login.svg": "/gulai-russ/static/media/button-login.d46fc294b5f1939d2dd6bbb8b0b14a1d.svg",
+    "static/media/cardButton.svg": "/gulai-russ/static/media/cardButton.e483849f151197950c474e51ace824db.svg",
+    "static/media/logout_btn.svg": "/gulai-russ/static/media/logout_btn.4a8c1253dff15061e4bd5f2f982bb32b.svg",
+    "static/media/contacts__line.svg": "/gulai-russ/static/media/contacts__line.1a35fcfa4c2b1ec5ef9ccc69698523e9.svg",
+    "static/media/line_mini.svg": "/gulai-russ/static/media/line_mini.1f93d627f61d07ba219711b0a5fc0c02.svg",
+    "static/media/Bar.svg": "/gulai-russ/static/media/Bar.cde64932dbbe0a0cbd72e662e046ad30.svg",
+    "static/media/arrow.svg": "/gulai-russ/static/media/arrow.e433279dfab6a0f90280b6625332cd38.svg",
+    "static/media/line-form.svg": "/gulai-russ/static/media/line-form.29dc58f25ffd0d3981d50af5da4dbbea.svg",
+    "static/media/line.svg": "/gulai-russ/static/media/line.be3dce0b92041d893ec499c981706297.svg",
+    "static/media/log-line.svg": "/gulai-russ/static/media/log-line.427a54db3cfd2381e71cdf48ee329391.svg",
+    "index.html": "/gulai-russ/index.html",
+    "main.f44d25da.css.map": "/gulai-russ/static/css/main.f44d25da.css.map",
+    "main.b1bcafa3.js.map": "/gulai-russ/static/js/main.b1bcafa3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f44d25da.css",
+    "static/js/main.b1bcafa3.js"
+  ]
+}

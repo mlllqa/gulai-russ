@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gulai-russ/static/css/main.f44d25da.css",
-    "main.js": "/gulai-russ/static/js/main.b1bcafa3.js",
+    "main.js": "/gulai-russ/static/js/main.811ccc1d.js",
     "static/media/moodboard.svg": "/gulai-russ/static/media/moodboard.0c5e9854068b61172c06f515ff063513.svg",
     "static/media/contacts__title.svg": "/gulai-russ/static/media/contacts__title.17a65c4c647c05a064d7fcf64896219f.svg",
     "static/media/logo3.svg": "/gulai-russ/static/media/logo3.d57e273b6ac2bbfdc8f0eb7286b402af.svg",
@@ -28,10 +28,10 @@
     "static/media/log-line.svg": "/gulai-russ/static/media/log-line.427a54db3cfd2381e71cdf48ee329391.svg",
     "index.html": "/gulai-russ/index.html",
     "main.f44d25da.css.map": "/gulai-russ/static/css/main.f44d25da.css.map",
-    "main.b1bcafa3.js.map": "/gulai-russ/static/js/main.b1bcafa3.js.map"
+    "main.811ccc1d.js.map": "/gulai-russ/static/js/main.811ccc1d.js.map"
   },
   "entrypoints": [
     "static/css/main.f44d25da.css",
-    "static/js/main.b1bcafa3.js"
+    "static/js/main.811ccc1d.js"
   ]
 }

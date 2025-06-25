@@ -1,0 +1,174 @@
+@import './mixins';
+
+/*HERO*/
+
+.heroBlock{
+    margin: 175rem 0 226rem;
+}
+
+.heroBlock__subtitle-first{
+    margin-bottom: 86rem;
+}
+
+.heroBlock__subtitle-second{
+    margin-top: 86rem;
+    text-align: right
+}
+
+.heroBlock__subtitle{
+    @include textBase;
+    font-size: 50rem;
+}
+
+.heroBlock__txt{
+    position: relative;
+    height: 175rem;
+}
+
+.heroBlock__txt-item{
+    position: absolute;
+    top: 0;
+    width: 1377.22rem;
+}
+
+.heroBlock__txt-item-first{
+    right: 140rem;
+    top: 10rem;
+}
+
+.heroBlock__txt-item-second{
+    right: 141rem;
+    top: 10rem;
+}
+
+.heroBlock__txt-item-third{
+    width: 1410.22rem;
+    right: 125rem;
+    top: -5rem;
+    opacity: 0.6;
+}
+
+.heroBlock__snowflakes-item{
+    width: 546rem;
+    position: absolute;
+}
+
+.heroBlock__txt-item-orig{
+    font-size: 150rem;
+    margin: 20rem 350rem;
+    opacity: 0;
+}
+
+.heroBlock__snowflakes-item-first{
+    top: 160rem;
+    right: 150rem;
+}
+
+.heroBlock__snowflakes-item-second{
+    left: 124rem;
+    rotate: 180deg;
+}
+
+/*DESCRIPTION*/
+
+.description{
+    @include descriptionBlock;
+}
+
+.description__block{
+    @include textBlockBase;
+}
+
+.description__block-first{
+    justify-content: flex-end
+}
+
+.description__block-txt{
+    @include textBase;
+    max-width: 1008rem;
+}
+
+.description__block-txt-first{
+    @include textBlockVariant(right);
+}
+
+.description__block-line{
+    height: 140rem;
+}
+
+/*CARDS*/
+
+.cards__title{
+    margin-top: 65rem;
+    @include textBase;
+    font-size: 50rem;
+    font-weight: 400;
+    margin-bottom: 81rem;
+}
+
+.cards__block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 121rem;
+}
+
+/*snowflakes*/
+
+.snowflakes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32rem 0;
+}
+
+.snowflakes__img{
+    width: 545rem;
+}
+
+/*MOADBOARD*/
+
+.moodboard{
+    // padding: 90rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moodboard__img{
+    width: 1368rem;
+}
+
+/*snowflakes*/
+
+.snowflakes__img-second{
+    rotate: 180deg;
+}
+
+/*reviews*/ 
+
+.reviews{
+    @include descriptionBlock;
+    padding: 116rem 0;
+    padding-top: 0;
+}
+
+.reviews__block{
+    @include textBlockBase;
+}
+
+.reviews__block-second{
+    justify-content: flex-end
+}
+
+.reviews__block-txt{
+    @include textBase;
+    max-width: 1008rem;
+}
+
+.reviews__block-txt-second{
+    @include textBlockVariant(right);
+}
+
+.reviews__block-line{
+    height: 140rem;
+}

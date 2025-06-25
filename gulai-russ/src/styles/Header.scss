@@ -1,0 +1,27 @@
+@import './mixins';
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 34rem 0;
+}
+
+.header__iconBlock-link{
+    background: transparent;
+    border: none;
+}
+
+.header__links{
+    display: flex;
+    gap: 60rem;
+}
+
+.header__links-item{
+    @include textBase;
+}
+
+.header__iconBlock-item{
+    width: 52rem;
+}

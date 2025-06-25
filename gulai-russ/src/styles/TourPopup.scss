@@ -1,0 +1,171 @@
+@import './mixins';
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #f4f4f4;
+  padding: 80rem 100rem;
+}
+
+.popup-close {
+  display: none;
+}
+
+.popup-title__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40rem;
+}
+
+.popup-title-wrapper {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  height: auto;
+  margin-bottom: 32rem;
+}
+
+.popup-title {
+  font-family: 'Lavka', sans-serif;
+  font-size: 100rem;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.popup-title-stroke-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  color: transparent;
+  -webkit-text-stroke: 10rem #5C005C;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4rem 14rem rgba(92, 0, 130, 0.6));
+}
+
+.popup-title-stroke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: transparent;
+  background: linear-gradient(to right, #B121A8, #5C005C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 6rem transparent;
+  filter: drop-shadow(0 1rem 5rem rgba(128, 0, 160, 0.3));
+}
+
+.popup-title-fill {
+  position: relative;
+  z-index: 2;
+  color: transparent;
+  background: linear-gradient(to bottom, #ffffffc1, #f2f1f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #efefef;
+  -webkit-text-stroke: 0;
+  filter: none;
+}
+
+.popup-subtitle {
+  @include textBase;
+  font-size: 40rem;
+  margin-bottom: 40rem;
+}
+
+.popup-body {
+  display: flex;
+  gap: 40rem;
+  margin-bottom: 30rem;
+}
+
+.popup-image {
+  max-width: 500rem;
+  width: 100%;
+  height: auto;
+  border-radius: 12rem;
+  object-fit: cover;
+}
+
+.popup-columns {
+  display: grid;
+  grid-template-columns: 1fr 200rem;
+  gap: 70rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.popup-column--left {
+  // тянется автоматически (1fr)
+}
+
+.popup-column--right {
+  // 200rem ширины задаётся в grid
+}
+
+.popup-section-title {
+  @include textBase;
+  font-family: 'EuclidRegularItalic';
+}
+
+.popup-text {
+  @include textBase;
+  margin-bottom: 20rem;
+}
+
+.popup-list {
+  font-size: 18rem;
+  padding-left: 20rem;
+  margin: 0;
+}
+
+.popup-list-item {
+  margin-bottom: 8rem;
+  list-style: none;
+}
+
+.popup-reserve {
+  display: block;
+  margin: 30rem auto 0;
+  font-size: 20rem;
+  background: transparent;
+  border: none;
+  border-radius: 12rem;
+  transition: 0.2s;
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 20rem;
+  right: 30rem;
+  background: transparent;
+  border: none;
+  font-size: 40rem;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.2s ease;
+
+}
+
+.popup-btn{
+    width: 496rem;
+}

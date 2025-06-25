@@ -1,0 +1,52 @@
+@import './mixins';
+
+.filterBar {
+  height: 119rem;
+  position: relative;
+}
+
+.filterBar__img {
+  width: 100%;
+  position: relative;
+}
+
+.filterBar__selects{
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    top: 60rem;
+    left: 35rem;
+    width: 100%;
+    padding: 0 100rem 0 30rem;
+    justify-content: space-between;
+}
+
+.filterBar__select {
+  background: transparent;
+  border: none;
+  @include textBase;
+  cursor: pointer;
+  outline: none;
+}
+
+.filterBar__date-txt{
+    @include textBase;
+    margin: 0 10rem;
+}
+
+.filterBar__date input{
+    max-width: calc(10ch);
+    background: transparent;
+    border: none;
+    outline: none;
+    @include textBase;
+//     width: 120rem;
+//     font-size: 16rem;
+//     border: none;
+//     border-bottom: 1px solid #aaa;
+//     
+//     color: #000;
+//     outline: none;
+//     font-family: inherit;
+//   }
+}

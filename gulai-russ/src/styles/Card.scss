@@ -1,0 +1,41 @@
+@import './mixins';
+
+.card{
+    position: relative;
+    width: 497rem;
+}
+
+.card__image{
+    width: 497rem;
+}
+
+.card__row{
+    display: flex;
+}
+
+.card__tags{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20rem
+}
+
+.card__tag{
+    @include textBase;
+}
+
+.card__btn{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    padding: 0;
+    margin-top: -30rem;
+}
+
+.card__btn-decor{
+    width: 540rem;
+    margin-left: -20rem;
+}
+
+.card__tag-spacer{
+    margin-right: 200rem;
+}

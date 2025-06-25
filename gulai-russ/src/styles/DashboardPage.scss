@@ -1,0 +1,99 @@
+@import "./mixins";
+
+.dashboard__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 77rem;
+}
+
+.dashboard__greeting {
+  @include textBase;
+  font-size: 50rem;
+}
+
+.dashboard__logout {
+  background: transparent;
+  border: none;
+}
+
+.dashboard__logout-btn {
+  width: 336rem;
+}
+
+/*snowflakes*/
+
+.snowflakes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32rem 0;
+}
+
+.snowflakes__img {
+  width: 545rem;
+}
+
+.dashboard__title{
+    @include textBase;
+  font-size: 50rem;
+  font-weight: 400;
+  margin-top: 77rem;
+  margin-bottom: 64rem;
+}
+
+.dashboard__feedback-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard__cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  row-gap: 55rem;
+  margin-bottom: 80rem;
+}
+
+
+.dashboard__feedback-title{
+  @include textBase;
+  font-size: 50rem;
+  font-weight: 400;
+  margin-bottom: 64rem;
+}
+
+.dashboard__underline{
+  width: 100%;
+}
+
+.dashboard__button{
+  background: transparent;
+  border: none;
+  margin-top: 103rem;
+}
+
+.dashboard__button-icon{
+  width: 336rem;
+}
+
+.dashboard__input {
+  all: unset;
+  background: transparent;
+  width: 100%;
+  border: none;
+  margin-bottom: 24rem;
+  @include textBase;
+  outline: none;
+  box-shadow: none;
+  box-shadow: 0 0 0px 1000px #d7d7d7 inset !important;
+  -webkit-text-fill-color: #000 !important;
+  margin-top: 61rem;
+
+
+  &::placeholder {
+    @include textBase;
+  }
+}

@@ -1,0 +1,98 @@
+@import "./mixins";
+
+
+.contacts__hero{
+    display: flex;
+    flex-direction: column;
+    gap: 94rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 155rem;
+    position: relative;
+}
+
+.contacts__txt{
+    @include textBase;
+    font-size: 50rem;
+}
+
+.contacts__title{
+    width: 1126rem;
+}
+
+.contacts__snow{
+    position: absolute;
+    width: 545rem;
+}
+
+.contacts__snow-first{
+    transform: rotate(-90deg);
+    top: 154rem;
+    left: -190rem;
+}
+
+.contacts__snow-second{
+    transform: rotate(90deg);
+    top: 154rem;
+    right: -190rem;
+}
+
+.contacts__btn{
+    background: transparent;
+    border: none;
+}
+
+.contacts__btn-bg{
+    width: 77rem;
+}
+
+.contacts__columns{
+    display: flex;
+    padding: 125rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts__column{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__column-first--txt{
+    @include textBase;
+    display: block;
+}
+
+.contacts__column-first--txt span{
+    font-family: 'EuclidRegularItalic';
+    display: block;
+}
+
+.contacts__columns-line{
+    height: 403rem;
+}
+
+.snowflakes-img{
+    width: 545rem;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__map{
+    display: flex;
+    margin-top: 105rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.contacts__map-title{
+    @include textBase;
+    font-size: 50rem;
+    margin-bottom: 43rem;
+}
+
+.contacts__map-image{
+    width: 1198rem;
+    margin-bottom: 105rem;
+}

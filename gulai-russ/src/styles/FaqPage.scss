@@ -1,0 +1,57 @@
+@import "./mixins";
+
+.faq-title {
+  @include textBase;
+  font-size: 50rem;
+  font-weight: 400;
+  margin-top: 87rem;
+  margin-bottom: 118rem;
+}
+
+.faq-item {
+  margin-bottom: 51rem;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  @include textBase;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-question__span {
+  @include textBase;
+  font-size: 40rem;
+}
+
+.faq-answer {
+  @include textBase;
+}
+
+.faq-line {
+  width: 100%;
+  margin-top: 30rem;
+}
+
+.faq-footer {
+  margin-top: 100rem;
+  text-align: center;
+}
+
+/*snowflakes*/
+
+.snowflakes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32rem 0;
+}
+
+.snowflakes__img{
+    width: 545rem;
+}

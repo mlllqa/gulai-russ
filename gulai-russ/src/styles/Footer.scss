@@ -1,0 +1,12 @@
+@import './mixins';
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 79rem 0;
+}
+
+.footer__txt{
+    @include textBase;
+}

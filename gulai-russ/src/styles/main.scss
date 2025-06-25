@@ -1,0 +1,24 @@
+@import './fonts';
+@import './variables';
+@import './mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: #D7D7D7;
+}
+
+html {
+  font-size: calc(1vw / 19.2);
+}
+
+.container{
+    margin: 0 98rem;
+}
+
+input {
+  outline: none;
+}

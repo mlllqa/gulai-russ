@@ -1,0 +1,25 @@
+@import './mixins';
+
+.ToursPage{
+    width: 100%;
+}
+
+.filterBar{
+    margin-bottom: 77rem;
+}
+
+.tours__title{
+    @include textBase;
+    font-size: 50rem;
+    font-weight: 400;
+    margin-top: 87rem;
+    margin-bottom: 47rem;
+}
+
+.tour__cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  row-gap: 55rem;
+  margin-bottom: 80rem;
+}

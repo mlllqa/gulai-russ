@@ -8,7 +8,7 @@ const CardById = ({ id, tour: propTour, onOpenPopup }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (propTour) return; // если передали тур — ничего не грузим
+    if (propTour) return;
     axios
       .get(`http://localhost:8000/api/tours/${id}`)
       .then((res) => {
@@ -27,11 +27,14 @@ const CardById = ({ id, tour: propTour, onOpenPopup }) => {
   const tags = Array.isArray(tour.tags) ? tour.tags : [];
   const visibleTags = tags.slice(0, -2);
   const lastTwoTags = tags.slice(-2);
+  const imagePath = tour.image_path
+    ? `${process.env.PUBLIC_URL}/images/cards/${tour.image_path}`
+    : `${process.env.PUBLIC_URL}/images/cards/fallback.svg`;
 
   return (
     <div className="card">
       <img
-        src={tour.image_path || "/images/cards/fallback.svg"}
+        src={imagePath}
         alt={tour.title || "Тур"}
         className="card__image"
       />

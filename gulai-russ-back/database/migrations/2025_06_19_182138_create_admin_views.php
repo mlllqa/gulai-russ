@@ -35,12 +35,13 @@ return new class extends Migration
                 u.email,
                 t.id AS tour_id,
                 t.title AS tour_title,
-                b.booking_date,
-                b.status AS booking_status,
-                b.payment_amount
+                t.status AS booking_status,
+                p.amount AS payment_amount
             FROM users u
             JOIN bookings b ON u.id = b.user_id
-            JOIN tours t ON b.tour_id = t.id;
+            JOIN tours t ON b.tour_id = t.id
+            LEFT JOIN payments p ON b.id = p.booking_id;
+
         ");
 
         // 3. Города с турами и ценами
@@ -71,12 +72,13 @@ return new class extends Migration
                 u.id AS user_id,
                 u.name AS full_name,
                 u.email,
-                b.booking_date,
+                b.created_at AS booking_date,
                 t.id AS tour_id,
                 t.title AS tour_title
             FROM users u
             JOIN bookings b ON u.id = b.user_id
             JOIN tours t ON b.tour_id = t.id;
+
         ");
 
         // 6. Клиенты, потратившие больше заданной суммы
@@ -86,10 +88,12 @@ return new class extends Migration
                 u.id AS user_id,
                 u.name AS full_name,
                 u.email,
-                SUM(b.payment_amount) AS total_spent
+                SUM(p.amount) AS total_spent
             FROM users u
             JOIN bookings b ON u.id = b.user_id
+            JOIN payments p ON b.id = p.booking_id
             GROUP BY u.id, u.name, u.email;
+
         ");
 
         // 7. Доступные туры в определенный период
@@ -132,19 +136,22 @@ return new class extends Migration
                 u.id AS user_id,
                 u.name AS full_name,
                 u.email,
-                SUM(b.payment_amount) AS total_spent
+                SUM(p.amount) AS total_spent
             FROM users u
             JOIN bookings b ON u.id = b.user_id
+            JOIN payments p ON b.id = p.booking_id
             GROUP BY u.id, u.name, u.email
-            HAVING SUM(b.payment_amount) > (
+            HAVING SUM(p.amount) > (
                 SELECT AVG(total)
                 FROM (
-                    SELECT SUM(payment_amount) AS total
-                    FROM bookings
-                    WHERE user_id IS NOT NULL
-                    GROUP BY user_id
+                    SELECT SUM(amount) AS total
+                    FROM payments
+                    JOIN bookings b2 ON payments.booking_id = b2.id
+                    WHERE b2.user_id IS NOT NULL
+                    GROUP BY b2.user_id
                 ) AS subquery
             );
+
         ");
     }
 

@@ -1,11 +1,23 @@
 <?php
 
 return [
-    'paths' => ['api/*', 'login', 'logout', 'register', 'user', 'bookings', 'sanctum/csrf-cookie'],
+
+    'paths' => [
+        'api/*',
+        'login',
+        'logout',
+        'register',
+        'user',
+        'bookings',
+        'sanctum/csrf-cookie',
+    ],
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:3000'],
+    'allowed_origins' => [
+        'http://localhost:3000',
+        'https://mlllqa.github.io',
+    ],
 
     'allowed_origins_patterns' => [],
 
@@ -16,4 +28,5 @@ return [
     'max_age' => 0,
 
     'supports_credentials' => true,
+
 ];

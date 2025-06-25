@@ -73,7 +73,7 @@ class TourController extends Controller
             'included' => json_decode($tour->included, true) ?? [],
             'what_to_take' => json_decode($tour->what_to_take, true) ?? [],
             'tags' => json_decode($tour->tags, true) ?? [],
-            'image_path' => '/images/cards/' . basename($tour->image_path),
+            'image_path' => basename($tour->image_path),
         ]);
     }
 }
